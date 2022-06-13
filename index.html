@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="./css/fontawesome/css/all.css" />
+    <!-- external css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./script.js" defer></script>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="./assets/logo.png" alt="rentacar-logo" />
+          </a>
+        </div>
+
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="fleet.html">Our Fleet</a></li>
+            <li><a href="fee.html">Rental Fee</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="admin.html">Admin Page</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+        <h2 class="page-title">Who Are We</h2>
+        <section class="who">
+          <div class="intro-video">
+            <video autoplay muted controls>
+              <source src="./assets/car-rental.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="intro-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              illo sapiente eaque dolor excepturi ad quas obcaecati architecto
+              tempora? In esse rem harum amet a sequi hic nisi nulla, animi non
+              sapiente tempora nesciunt labore consequuntur error perspiciatis
+              vero tempore quo necessitatibus beatae quae sed eos ex. Aspernatur
+              voluptatibus nostrum, itaque quisquam earum nesciunt labore modi
+              et dolorum est ea. Eveniet eligendi reiciendis perspiciatis veniam
+              saepe dignissimos aperiam quo, velit suscipit quaerat rerum!
+              Laudantium, esse ea veritatis mollitia vel magnam similique ipsam
+              atque cum modi? Laboriosam soluta sapiente enim blanditiis in
+              dolores ea sunt a et aliquid, possimus, nostrum doloremque.
+            </p>
+          </div>
+        </section>
+
+        <h2 class="page-title">Our Services</h2>
+        <section class="what">
+          <div class="van-image">
+            <p class="img-text">Rent a Van</p>
+            <img src="assets/cars/van_1.jpg" alt="van" />
+          </div>
+
+          <div class="car-image">
+            <p class="img-text">Rent a Car</p>
+            <img src="assets/cars/car_1.jpg" alt="car" />
+          </div>
+
+          <div class="bike-image">
+            <p class="img-text">Rent a Bike</p>
+            <img src="assets/cars/bike_1.jpg" alt="bike" />
+          </div>
+
+          <div class="vip-image">
+            <p class="img-text">VIP</p>
+            <img src="assets/cars/vip_1.jpg" alt="vip" />
+          </div>
+        </section>
+        <div class="btn-container">
+          <a href="about.html" target="_blank">
+            <button class="btn">Rent Now</button>
+          </a>
+        </div>
+        <!-- javascript: window.open(url, "_blank"); -->
+      </main>
+
+      <footer>
+        <div class="newsletter">
+          <h3>Join Our Newletter</h3>
+          <form action="" method="POST">
+            <div>
+              <input type="text" name="username" placeholder="Your Username" />
+            </div>
+            <div>
+              <input type="text" name="name" placeholder="Your Name" />
+            </div>
+            <div>
+              <input type="text" name="email" placeholder="Your Email" />
+            </div>
+            <button>Subscribe</button>
+          </form>
+        </div>
+        <div class="contact">
+          <h3>Contact Us</h3>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+302102102100">2102102100</a>
+          <br />
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:smazioti@gmail.com">smazioti@gmail.com</a>
+        </div>
+        <div class="map">
+          <h3>Our Location</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12586.102136318656!2d23.644113333862744!3d37.94151337566892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bbe5bb8515a1%3A0x3e0dce8e58812705!2zzqDOsc69zrXPgM65z4PPhM6uzrzOuc6_IM6gzrXOuc-BzrHOuc-Oz4I!5e0!3m2!1sel!2sgr!4v1653406106524!5m2!1sel!2sgr"
+            width="150"
+            height="80"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
