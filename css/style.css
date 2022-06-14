@@ -280,10 +280,6 @@ textarea {
 
 /* tablet view */
 @media screen and (max-width: 1100px) and (min-width: 780px) {
-  nav {
-    background: red;
-  }
-
   footer {
     grid-template-columns: 1fr;
   }
