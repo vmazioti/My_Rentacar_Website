@@ -1,3 +1,47 @@
+<?php  
+if (isset($_POST['username'])=='root' && isset($_POST['password'])=='admin123') {
+	include 'db_connect.php';
+
+	
+	$username = trim($_POST['username']);
+	$password = trim($_POST['password']);
+
+	if (empty($username) ||empty($password)) {
+		echo "Please complete all form fields!";
+	} else {
+		// $stmt = $conn->prepare("INSERT INTO clients(username, name, email) VALUES (?, ?, ?)");
+		// $stmt->bind_param("ssd", $username, $name, $email);
+		// $result = $stmt->execute();
+
+		// if ($result) {
+		// 	echo "You are subscribed to our newsletter!";
+		// } else {
+		// 	echo "You could not subscribe to our nesletter due to an error!";
+		// }
+		// $stmt->close();
+    echo "You are in!";
+	}
+
+	mysqli_close($conn);
+
+} else {
+	echo "You shall not pass!";
+  
+}
+echo "</br><a href='index.html'>Back</a>"
+
+
+?>
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,8 +78,9 @@
 
       <main>
         <div class="page-container">
+          <h2 class="page-title">Admin Login</h2>
           <div class="admin-login">
-            <form id="login">
+            <form id="login" method="post" action="admin.php">
               <div class="form-group">
                 <label class="form-label" for="username">Username</label>
                 <input type="text" id="username" name="username" />
