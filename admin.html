@@ -9,7 +9,7 @@
     <!-- external css -->
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./script.js" defer></script>
-    <title>About Us</title>
+    <title>Admin Page</title>
   </head>
   <body>
     <div class="page-container">
@@ -33,66 +33,31 @@
       </nav>
 
       <main>
-        <section class="about-us">
-          <div class="phil">
-            <h2 class="page-title">Our Philosophy</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              deserunt quos porro a nemo repellat placeat repellendus, dolor
-              molestias recusandae?
-            </p>
+        <div class="page-container">
+          <h2 class="page-title">Admin Login</h2>
+          <div class="admin-login">
+            <form id="login" method="post" action="admin.php">
+              <div class="form-group">
+                <label class="form-label" for="username">Username</label>
+                <input type="text" id="username" name="username" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="password">Password</label>
+                <input type="password" id="password" name="password" />
+              </div>
+
+              <button type="submit">Login</button>
+            </form>
           </div>
-          <div class="vision">
-            <h2 class="page-title">Our Vision</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-              velit earum corporis distinctio ipsa maxime ipsum optio illum? Ea,
-              consequatur!
-            </p>
-          </div>
-          <div class="goal">
-            <h2 class="page-title">Our Goal</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, hic.
-              Reprehenderit unde quos error cumque asperiores sint reiciendis
-              qui. Consectetur!
-            </p>
-          </div>
-        </section>
-        <h2 class="page-title">Our Workforce</h2>
-        <section class="workforce">
-          <div>
-            <h3>Call center</h3>
-            <img src="./assets/workforce/call.jpg" alt="call center" />
-          </div>
-          <div>
-            <h3>Rental Department</h3>
-            <img src="./assets/workforce/rent.jpg" alt="rent dept" />
-          </div>
-          <div>
-            <h3>Transportation</h3>
-            <img src="./assets/workforce/vip.jpg" alt="vip trans" />
-          </div>
-          <div>
-            <h3>Accounting</h3>
-            <img src="./assets/workforce/logistics.jpg" alt="accounting" />
-          </div>
-        </section>
-        <!-- <section class="rent-fee">
-          
-        </section> -->
-        <h2 class="page-title">Rental Fee</h2>
-        <div class="btn-container">
-          <a href="fee.html" target="_blank">
-            <button class="btn">Calculate Your Rental Fee</button>
-          </a>
+          <p></p>
         </div>
       </main>
 
       <footer>
         <div class="newsletter">
           <h3>Join Our Newletter</h3>
-          <form action="" method="POST">
+          <form action="" method="">
             <div>
               <input type="text" name="username" placeholder="Your Username" />
             </div>
