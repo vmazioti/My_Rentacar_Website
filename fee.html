@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/fontawesome/css/all.css" />
     <!-- external css -->
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./script.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Rental Fee</title>
   </head>
   <body>
@@ -38,22 +38,21 @@
           <form action="" method="">
             <div class="form-group">
               <label class="form-label" for="age">Driver's Age</label>
-              <input type="text" id="age" name="age" />
+              <input type="number" id="age" name="age" />
             </div>
 
             <div class="form-group">
               <label class="form-label" for="vehicle">Vehicle (cc)</label>
-              <input type="text" id="vehicle" name="vehicle" />
+              <input type="number" id="vehicle" name="vehicle" />
             </div>
 
             <div class="form-group">
               <label class="form-label" for="days">Number Of Days</label>
-              <input type="text" id="days" name="days" />
+              <input type="number" id="days" name="days" />
             </div>
 
-            <!-- isws vgalw to class-->
             <div class="btn-container">
-              <button class="btn">Calculate</button>
+              <button onclick="calculate_fee()" class="btn">Calculate</button>
             </div>
           </form>
         </div>
@@ -62,7 +61,7 @@
       <footer>
         <div class="newsletter">
           <h3>Join Our Newletter</h3>
-          <form action="" method="POST">
+          <form action="insert_news.php" method="POST">
             <div>
               <input type="text" name="username" placeholder="Your Username" />
             </div>

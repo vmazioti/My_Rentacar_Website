@@ -17,7 +17,7 @@ if (isset($_POST['username']) && isset($_POST['name']) && isset($_POST['email'])
 		if ($result) {
 			echo "You are subscribed to our newsletter!";
 		} else {
-			echo "You could not subscribe to our nesletter due to an error!";
+			echo "You could not subscribe to our newsletter due to an error!";
 		}
 		$stmt->close();
 	}
