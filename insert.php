@@ -13,7 +13,7 @@ if (isset($_POST['name']) && isset($_POST['phone_number']) && isset($_POST['emai
 		echo "Please complete all form fields!";
 	} else {
 		$stmt = $conn->prepare("INSERT INTO messages(name, phone_number, email, subject, message) VALUES (?, ?, ?, ?, ?)");
-		$stmt->bind_param("ssd", $name, $phone_number, $email, $subject, $message);
+		$stmt->bind_param("sssss", $name, $phone_number, $email, $subject, $message);
 		$result = $stmt->execute();
 
 		if ($result) {

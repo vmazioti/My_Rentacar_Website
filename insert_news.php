@@ -11,7 +11,7 @@ if (isset($_POST['username']) && isset($_POST['name']) && isset($_POST['email'])
 		echo "Please complete all form fields!";
 	} else {
 		$stmt = $conn->prepare("INSERT INTO clients(username, name, email) VALUES (?, ?, ?)");
-		$stmt->bind_param("ssd", $username, $name, $email);
+		$stmt->bind_param("sss", $username, $name, $email);
 		$result = $stmt->execute();
 
 		if ($result) {
