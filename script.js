@@ -1,7 +1,7 @@
 function calculate_fee() {
-  var driverAge = document.getElementById("age");
-  var vehicleCc = document.getElementById("vehicle");
-  var rentDays = document.getElementById("days");
+  var driverAge = document.getElementById("age").value;
+  var vehicleCc = document.getElementById("vehicle").value;
+  var rentDays = document.getElementById("days").value;
 
   if (driverAge >= 18 && driverAge <= 22) {
     var ageFee = 0.00042;
