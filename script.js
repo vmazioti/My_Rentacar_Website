@@ -43,5 +43,7 @@ function calculate_fee() {
 
   var totalFee = insuranceFee + rentFee;
 
-  alert("Your Rental Fee is: " + totalFee + "€");
+  var finalFee = Math.round(totalFee);
+
+  alert("Your Rental Fee is: " + finalFee + "€");
 }
