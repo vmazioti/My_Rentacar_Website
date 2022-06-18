@@ -52,7 +52,7 @@ nav .logo {
 
 /* footer */
 footer {
-  position: relative;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -170,7 +170,8 @@ main .map {
 }
 
 .contact-form,
-.fee-form {
+.fee-form,
+.admin-login {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,7 +212,6 @@ textarea {
 .about-us {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border: ;
 }
 
 .workforce {
@@ -283,6 +283,7 @@ textarea {
 @media screen and (max-width: 1100px) and (min-width: 780px) {
   footer {
     grid-template-columns: 1fr;
+    position: relative;
   }
 
   .who {
